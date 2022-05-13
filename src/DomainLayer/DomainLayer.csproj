@@ -54,6 +54,7 @@
     <Compile Include="Common\Dto\Paginated.cs" />
     <Compile Include="Entities\History.cs" />
     <Compile Include="Entities\Shares.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\Configurations\HistoryConfiguration.cs" />
     <Compile Include="Persistence\Configurations\SharesConfiguration.cs" />
     <Compile Include="Persistence\Interfaces\IDbContextFactory.cs" />
@@ -81,7 +82,6 @@
   <ItemGroup>
     <Folder Include="Common\Interfaces\" />
     <Folder Include="Common\Models\" />
-    <Folder Include="Migrations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
