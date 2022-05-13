@@ -69,6 +69,10 @@
     <Compile Include="Persistence\WPFNTierHahnContextFactory.cs" />
     <Compile Include="Persistence\WPFNTierHahnDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\HistoryService.cs" />
+    <Compile Include="Services\Interfaces\IHistoryService.cs" />
+    <Compile Include="Services\Interfaces\ISharesService.cs" />
+    <Compile Include="Services\SharesService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -78,7 +82,6 @@
     <Folder Include="Common\Interfaces\" />
     <Folder Include="Common\Models\" />
     <Folder Include="Migrations\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
