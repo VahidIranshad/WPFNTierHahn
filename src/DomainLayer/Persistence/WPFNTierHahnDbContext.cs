@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DomainLayer.Persistence.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -7,13 +8,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace DomainLayer.Persistence.Repositories
+namespace DomainLayer.Persistence
 {
     /// <summary>
     /// 
     /// </summary>
     /// 
-    public class WPFNTierHahnDbContext : DbContext
+    public class WPFNTierHahnDbContext : DbContext, IWPFNTierHahnDbContext
     {
         public WPFNTierHahnDbContext() : base("name=DefaultConnection")
         {

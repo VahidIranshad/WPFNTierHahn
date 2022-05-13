@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CF664B35-6262-4D1F-81D2-513DEA485A2A}"
-	ProjectSection(SolutionItems) = preProject
-		src\doc.txt = src\doc.txt
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLayer", "src\DomainLayer\DomainLayer.csproj", "{83773F1D-562E-4432-83AD-F0D674956E5D}"
 EndProject

@@ -6,12 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DomainLayer.Persistence.Repositories
+namespace DomainLayer.Persistence
 {
-    /// <summary>
-    /// DbContext factory implementation, without creating dependency
-    /// </summary>
-    public class DbContextFactory : IDbContextFactory
+    public class WPFNTierHahnContextFactory : IWPFNTierHahnContextFactory
     {
         private WPFNTierHahnDbContext _context;
 

@@ -52,9 +52,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Dto\Paginated.cs" />
+    <Compile Include="Entities\History.cs" />
+    <Compile Include="Entities\Shares.cs" />
+    <Compile Include="Persistence\Configurations\HistoryConfiguration.cs" />
+    <Compile Include="Persistence\Configurations\SharesConfiguration.cs" />
     <Compile Include="Persistence\Interfaces\IDbContextFactory.cs" />
-    <Compile Include="Persistence\Repositories\DbContextFactory.cs" />
-    <Compile Include="Persistence\Repositories\WPFNTierHahnDbContext.cs" />
+    <Compile Include="Persistence\DbContextFactory.cs" />
+    <Compile Include="Persistence\Interfaces\IWPFNTierHahnContext.cs" />
+    <Compile Include="Persistence\Interfaces\IWPFNTierHahnDbContext.cs" />
+    <Compile Include="Persistence\Interfaces\IWPFNTierHahnContextFactory.cs" />
+    <Compile Include="Persistence\Repositories\HistoryRepository.cs" />
+    <Compile Include="Persistence\Repositories\Interfaces\IHistoryRepository.cs" />
+    <Compile Include="Persistence\Repositories\Interfaces\ISharesRepository.cs" />
+    <Compile Include="Persistence\Repositories\SharesRepository.cs" />
+    <Compile Include="Persistence\WPFNTierHahnContext.cs" />
+    <Compile Include="Persistence\WPFNTierHahnContextFactory.cs" />
+    <Compile Include="Persistence\WPFNTierHahnDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,9 +77,7 @@
   <ItemGroup>
     <Folder Include="Common\Interfaces\" />
     <Folder Include="Common\Models\" />
-    <Folder Include="Entities\" />
     <Folder Include="Migrations\" />
-    <Folder Include="Persistence\Configurations\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
